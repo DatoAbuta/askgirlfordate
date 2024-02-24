@@ -7,10 +7,30 @@ export default function FirstPage() {
     
   const [top,setTop] = useState(460)
   const [left,setLeft] = useState(990)
+  
+  const [fraza,setFraza] = useState("No")
+
+  const Frazebi = [
+    "Vitireb",
+    "Dafikrdi",
+    "Shecdomaa", 
+    "Dzibil?", 
+    "Cmoonnn", 
+    "Atrakeb", 
+    "Gaglaxav", 
+    "Dagerxeva", 
+    "Gcem", 
+    "Breakup?",
+    "Gshordebi",
+    "Rato Mawvaleb?",
+    "Kittentqo"
+  ]
 
   const handleClick = () => {
     setTop(Math.floor(Math.random() * 1000))
     setLeft(Math.floor(Math.random() * 1000))
+
+    setFraza(Frazebi[Math.floor(Math.random() * Frazebi.length)])
   }
 
   return (
@@ -25,7 +45,7 @@ export default function FirstPage() {
     <Link to={'/secondpage'}>
       <button className='ghilaki'>Yes</button>
     </Link>
-      <button className='ghilaki' onClick={handleClick} style={{left:`${left}px`, top:`${top}px`}}>No</button>
+      <button className='ghilaki' onClick={handleClick} style={{left:`${left}px`, top:`${top}px`}}>{fraza}</button>
     </div>
     </>
   )
