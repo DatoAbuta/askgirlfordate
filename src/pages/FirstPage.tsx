@@ -4,7 +4,7 @@ import './first.css'
 
 export default function FirstPage() {
 
-    
+
   const [top,setTop] = useState(460)
   const [left,setLeft] = useState(990)
   
@@ -27,7 +27,7 @@ export default function FirstPage() {
   ]
 
   const handleClick = () => {
-    setTop(Math.floor(Math.random() * 1000))
+    setTop(Math.floor(Math.random() * 800))
     setLeft(Math.floor(Math.random() * 1000))
 
     setFraza(Frazebi[Math.floor(Math.random() * Frazebi.length)])
@@ -45,7 +45,7 @@ export default function FirstPage() {
     <Link to={'/secondpage'}>
       <button className='ghilaki'>Yes</button>
     </Link>
-      <button className='ghilaki' onClick={handleClick} style={{left:`${left}px`, top:`${top}px`}}>{fraza}</button>
+      <button className='ghilaki' onMouseEnter={handleClick} style={{left:`${left}px`, top:`${top}px`}}>{fraza}</button>
     </div>
     </>
   )
