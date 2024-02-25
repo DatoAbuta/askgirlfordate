@@ -20,10 +20,10 @@ export default function FirstPage() {
     "Gaglaxav", 
     "Dagerxeva", 
     "Gcem", 
-    "Breakup?",
+    "AUUUUUU",
     "Gshordebi",
     "Rato Mawvaleb?",
-    "Kittentqo"
+    "Kittentqo",
   ]
 
   const handleClick = () => {
